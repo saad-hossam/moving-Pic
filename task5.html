@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myContainer {
+  width: 400px;
+  height: 400px;
+  border: 2px solid salmon;
+  position: relative;
+  background: white;
+}
+#myAnimation {
+  width: 50px;
+  height: 50px;
+  top: 100px;
+  right: 0;
+
+  position: absolute;
+}
+#myAnimation1 {
+  width: 50px;
+  height: 50px;
+  top: 100px;
+
+  left: 0;
+  position: absolute;
+  /* background-color: blue; */
+}
+#myAnimation2 {
+  width: 50px;
+  height: 50px;
+  /* top: 250px; */
+  margin-top: 300px;
+margin-left: 180px;
+ 
+/* left: 180px; */
+  position: absolute;
+  /* background-color: green; */
+}
+</style>
+<body>
+
+<p>
+<button onclick="myMove()">move</button> 
+<button id="stop" onclick="stop()">stop</button> 
+
+<button onclick="reset()">reset </button> 
+
+</p>
+
+<div id ="myContainer">
+<div id ="myAnimation"><img src="movingPic/icon1.gif" width="50px" height="50px"></div>
+<div id ="myAnimation1"><img src="movingPic/icon2.gif" width="50px" height="50px"></div>
+<div id ="myAnimation2"><img src="movingPic/TOP.JPG" width="50px" height="50px"></div>
+
+
+</div>
+<br><br><br><br>
+<div id='msg' >
+  <script>
+      let text = document.getElementById("myAnimation").innerHTML;
+      document.getElementById("msg").innerText = text;
+  </script>
+  <div id='msg1' >
+    <script>
+        let text1 = document.getElementById("myAnimation1").innerHTML;
+        document.getElementById("msg1").innerText = text1;
+    </script>
+</div>
+
+
+<script src="task5.js"></script>
+</body>
+</html>
